@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nyxx — Audio Engineering & Electronic Music. Sound for gaming, film, advertising. Authorial electronic-indie music.">
+  <title>Nyxx — Audio Engineering & Electronic Music</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Noise Overlay -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <header class="nav" id="nav">
+    <div class="container">
+      <nav class="nav__inner" aria-label="Main navigation">
+
+        <a href="#hero" class="nav__brand" aria-label="Nyxx home">
+          <span class="nav__logo">Nyxx</span>
+        </a>
+
+        <ul class="nav__links" role="list">
+          <li><a href="#work" class="nav__link">Work</a></li>
+          <li><a href="#music" class="nav__link">Music</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
+        </ul>
+
+        <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span class="nav__toggle-line"></span>
+          <span class="nav__toggle-line"></span>
+        </button>
+
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero section" id="hero">
+
+    <!-- Gradient Orbs -->
+    <div class="orb orb--violet" style="width:500px;height:500px;top:-100px;left:-100px;" aria-hidden="true"></div>
+    <div class="orb orb--teal" style="width:400px;height:400px;bottom:-50px;right:-50px;" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="hero__content">
+
+        <!-- XX Monogram -->
+        <div class="hero__mark fade-in" aria-hidden="true">
+          <span class="xx-mark">XX</span>
+        </div>
+
+        <!-- Heading -->
+        <h1 class="hero__title fade-in">
+          Sound,<br>
+          <span class="hero__title-accent">engineered.</span><br>
+          Music,<br>
+          <span class="hero__title-accent">imagined.</span>
+        </h1>
+
+        <!-- Dual Path -->
+        <p class="hero__subtitle fade-in">
+          Audio engineering for gaming, film &amp; advertising.<br>
+          Electronic-indie music, on my own terms.
+        </p>
+
+        <div class="hero__paths fade-in">
+          <a href="#work" class="btn btn--primary">View Work</a>
+          <a href="#music" class="btn btn--outline">Listen to Music</a>
+        </div>
+
+      </div>
+
+      <!-- Waveform Canvas -->
+      <canvas class="hero__waveform" id="heroWaveform" aria-hidden="true"></canvas>
+
+    </div>
+  </section>
+
+  <!-- ==================== WORK ==================== -->
+  <section class="section" id="work">
+    <div class="container">
+
+      <p class="label section-label fade-in">Selected Work</p>
+      <h2 class="fade-in">Audio for worlds.</h2>
+
+      <!-- Category Filter -->
+      <div class="work__filters fade-in" role="tablist" aria-label="Filter work by category">
+        <button class="work__filter work__filter--active" role="tab" aria-selected="true" data-filter="all">All</button>
+        <button class="work__filter" role="tab" aria-selected="false" data-filter="gaming">Gaming</button>
+        <button class="work__filter" role="tab" aria-selected="false" data-filter="film">Film</button>
+        <button class="work__filter" role="tab" aria-selected="false" data-filter="ads">Advertising</button>
+      </div>
+
+      <!-- Work Grid -->
+      <div class="grid grid--3 work__grid" role="list">
+
+        <!-- Project 1 — Gaming -->
+        <article class="card work__item fade-in" data-category="gaming" role="listitem">
+          <div class="card__image" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);" role="img" aria-label="Project thumbnail"></div>
+          <div class="card__body">
+            <p class="label">Gaming</p>
+            <h3 class="card__title">Open World RPG — Sound Design</h3>
+            <p class="card__meta">Full audio design, ambient systems, combat SFX</p>
+          </div>
+        </article>
+
+        <!-- Project 2 — Film -->
+        <article class="card work__item fade-in" data-category="film" role="listitem">
+          <div class="card__image" style="background: linear-gradient(135deg, #1a1a2e 0%, #2d1b69 50%, #11001c 100%);" role="img" aria-label="Project thumbnail"></div>
+          <div class="card__body">
+            <p class="label">Film</p>
+            <h3 class="card__title">Short Film — Mix &amp; Sound Design</h3>
+            <p class="card__meta">Dolby Atmos mix, foley, atmospheric design</p>
+          </div>
+        </article>
+
+        <!-- Project 3 — Advertising -->
+        <article class="card work__item fade-in" data-category="ads" role="listitem">
+          <div class="card__image" style="background: linear-gradient(135deg, #0a0a0f 0%, #1a2e1a 50%, #0f3460 100%);" role="img" aria-label="Project thumbnail"></div>
+          <div class="card__body">
+            <p class="label">Advertising</p>
+            <h3 class="card__title">Brand Campaign — Audio Identity</h3>
+            <p class="card__meta">Sonic branding, jingle, social cutdowns</p>
+          </div>
+        </article>
+
+        <!-- Project 4 — Gaming -->
+        <article class="card work__item fade-in" data-category="gaming" role="listitem">
+          <div class="card__image" style="background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);" role="img" aria-label="Project thumbnail"></div>
+          <div class="card__body">
+            <p class="label">Gaming</p>
+            <h3 class="card__title">Mobile Game — Music &amp; SFX</h3>
+            <p class="card__meta">Original score, UI sounds, loop design</p>
+          </div>
+        </article>
+
+        <!-- Project 5 — Film -->
+        <article class="card work__item fade-in" data-category="film" role="listitem">
+          <div class="card__image" style="background: linear-gradient(135deg, #1a1a2e 0%, #4a1942 50%, #1a1a2e 100%);" role="img" aria-label="Project thumbnail"></div>
+          <div class="card__body">
+            <p class="label">Film</p>
+            <h3 class="card__title">Documentary — Post Production</h3>
+            <p class="card__meta">Dialogue editing, mix, color-sync</p>
+          </div>
+        </article>
+
+        <!-- Project 6 — Advertising -->
+        <article class="card work__item fade-in" data-category="ads" role="listitem">
+          <div class="card__image" style="background: linear-gradient(135deg, #0a0a0f 0%, #2d1b69 50%, #0a0a0f 100%);" role="img" aria-label="Project thumbnail"></div>
+          <div class="card__body">
+            <p class="label">Advertising</p>
+            <h3 class="card__title">Product Launch — Sound Design</h3>
+            <p class="card__meta">Teaser audio, product SFX, social versions</p>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== MUSIC ==================== -->
+  <section class="section" id="music">
+
+    <!-- Gradient Orb -->
+    <div class="orb orb--teal" style="width:600px;height:600px;top:50%;right:-200px;transform:translateY(-50%);" aria-hidden="true"></div>
+
+    <div class="container">
+
+      <p class="label section-label fade-in" style="color: var(--accent-teal);">Authorial Work</p>
+      <h2 class="fade-in">Music, imagined.</h2>
+
+      <!-- Releases Grid -->
+      <div class="grid grid--2 music__releases">
+
+        <!-- Release 1 -->
+        <div class="music__release card fade-in">
+          <div class="card__image" style="background: linear-gradient(135deg, #0a0a0f 0%, #7B61FF 50%, #00D4AA 100%);" role="img" aria-label="Midnight Frequency cover art"></div>
+          <div class="card__body">
+            <p class="label">EP — 2025</p>
+            <h3 class="card__title">Midnight Frequency</h3>
+            <p class="card__meta">Electronic-indie • 6 tracks • 28 min</p>
+            <div class="music__links" style="margin-top: 0.75rem;">
+              <a href="#" class="btn btn--ghost" aria-label="Listen to Midnight Frequency on Spotify">Spotify</a>
+              <a href="#" class="btn btn--ghost" aria-label="Listen to Midnight Frequency on Apple Music">Apple Music</a>
+              <a href="#" class="btn btn--ghost" aria-label="Listen to Midnight Frequency on Bandcamp">Bandcamp</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Release 2 -->
+        <div class="music__release card fade-in">
+          <div class="card__image" style="background: linear-gradient(135deg, #0a0a0f 0%, #00D4AA 50%, #7B61FF 100%);" role="img" aria-label="Static Dreams cover art"></div>
+          <div class="card__body">
+            <p class="label">Single — 2024</p>
+            <h3 class="card__title">Static Dreams</h3>
+            <p class="card__meta">Electronic-indie • 1 track • 4:32</p>
+            <div class="music__links" style="margin-top: 0.75rem;">
+              <a href="#" class="btn btn--ghost" aria-label="Listen to Static Dreams on Spotify">Spotify</a>
+              <a href="#" class="btn btn--ghost" aria-label="Listen to Static Dreams on Apple Music">Apple Music</a>
+              <a href="#" class="btn btn--ghost" aria-label="Listen to Static Dreams on Bandcamp">Bandcamp</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Listen CTA -->
+      <div class="music__cta fade-in" style="text-align: center; margin-top: var(--space-xl);">
+        <p style="color: var(--text-muted); margin-bottom: var(--space-md);">Find Nyxx on</p>
+        <div style="display: flex; gap: var(--space-sm); justify-content: center; flex-wrap: wrap;">
+          <a href="#" class="btn btn--outline">Spotify</a>
+          <a href="#" class="btn btn--outline">Apple Music</a>
+          <a href="#" class="btn btn--outline">Bandcamp</a>
+          <a href="#" class="btn btn--outline">SoundCloud</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section class="section" id="about">
+
+    <!-- Gradient Orb -->
+    <div class="orb orb--violet" style="width:400px;height:400px;top:20%;left:-100px;" aria-hidden="true"></div>
+
+    <div class="container">
+
+      <p class="label section-label fade-in">About</p>
+      <h2 class="fade-in">Two modes. One sensibility.</h2>
+
+      <div class="about__content" style="display: grid; grid-template-columns: 1fr 1.5fr; gap: var(--space-xl); align-items: start;">
+
+        <!-- Portrait Placeholder -->
+        <div class="about__portrait fade-in">
+          <div style="aspect-ratio: 3/4; background: linear-gradient(180deg, var(--bg-surface) 0%, var(--bg-elevated) 100%); border-radius: var(--radius-lg); border: 1px solid var(--border-subtle); display: flex; align-items: center; justify-content: center;">
+            <span class="xx-mark" style="font-size: 4rem; opacity: 0.3;">XX</span>
+          </div>
+        </div>
+
+        <!-- Bio -->
+        <div class="about__bio fade-in">
+          <p style="font-size: 1.125rem; color: var(--text-primary); line-height: 1.7; margin-bottom: var(--space-md);">
+            I work in two modes: commercial and authorial. In one, I build sound worlds for games, films, and brands. In the other, I build them for myself.
+          </p>
+          <p style="font-size: 1.125rem; color: var(--text-primary); line-height: 1.7; margin-bottom: var(--space-lg);">
+            Both come from the same place — a belief that audio isn't just heard, it's felt. Whether I'm mixing a Dolby Atmos film score or producing an electronic-indie track, the goal is the same: make it move people.
+          </p>
+
+          <!-- Skills / Tools -->
+          <div class="about__tools">
+            <p class="label" style="margin-bottom: var(--space-sm);">Tools</p>
+            <div class="about__tools-list" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+              <span class="about__tool-tag">Pro Tools</span>
+              <span class="about__tool-tag">Logic Pro</span>
+              <span class="about__tool-tag">Ableton Live</span>
+              <span class="about__tool-tag">Wwise</span>
+              <span class="about__tool-tag">FMOD</span>
+              <span class="about__tool-tag">iZotope</span>
+              <span class="about__tool-tag">FabFilter</span>
+              <span class="about__tool-tag">Reaktor</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section class="section" id="contact">
+
+    <!-- Gradient Orb -->
+    <div class="orb orb--violet" style="width:500px;height:500px;bottom:-200px;left:50%;transform:translateX(-50%);" aria-hidden="true"></div>
+
+    <div class="container" style="text-align: center;">
+
+      <p class="label section-label fade-in">Get in Touch</p>
+      <h2 class="fade-in" style="max-width: 600px; margin: 0 auto var(--space-lg);">Let's build something together.</h2>
+
+      <p class="fade-in" style="max-width: 500px; margin: 0 auto var(--space-xl);">
+        Whether it's a game, a film, an ad campaign, or just a conversation about sound — I'd love to hear from you.
+      </p>
+
+      <div class="fade-in" style="display: flex; gap: var(--space-sm); justify-content: center; flex-wrap: wrap;">
+        <a href="mailto:hello@nyxx.audio" class="btn btn--primary">hello@nyxx.audio</a>
+        <a href="#" class="btn btn--outline">Book a Call</a>
+      </div>
+
+      <!-- Social Links -->
+      <div class="contact__socials fade-in" style="margin-top: var(--space-xl); display: flex; gap: var(--space-md); justify-content: center;">
+        <a href="#" class="contact__social-link" aria-label="Instagram">Instagram</a>
+        <a href="#" class="contact__social-link" aria-label="Twitter / X">X</a>
+        <a href="#" class="contact__social-link" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" class="contact__social-link" aria-label="YouTube">YouTube</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner" style="display: flex; justify-content: space-between; align-items: center; padding: var(--space-lg) 0; border-top: 1px solid var(--border-subtle);">
+
+        <div class="footer__brand">
+          <span class="xx-mark" style="font-size: 1.25rem;">Nyxx</span>
+        </div>
+
+        <p class="label" style="font-size: 0.75rem;">
+          &copy; <span id="year"></span> Nyxx. All rights reserved.
+        </p>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== SCRIPTS ==================== -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
